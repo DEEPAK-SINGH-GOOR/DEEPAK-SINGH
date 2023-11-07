@@ -6,18 +6,22 @@ main()
 	scanf("%d",&a);
 	
 	
-	if(a<=0)
+	if(a<0)
 	{
-		
-	   printf("This Value is Nagative !!");
-
+	   printf("===========================\n");	
+	   printf("This Value is  Nagative  !!\n");
+       printf("===========================\n");
 	}
 	else if (a==0)
 	{
-		printf("This Value is Natural   !!");
+		printf("===========================\n");
+		printf("This Value is Natural   !!\n");
+		printf("===========================\n");
 	}
     else
     {
-    	printf("This Value is Positive  !!");
+    	printf("===========================\n");
+    	printf("This Value is Positive  !!\n");
+    	printf("===========================\n");
 	}
 }
