@@ -2,10 +2,10 @@
 main()
 {
 	char s[30];
-	int i;
+	int i,n;
 	
 	printf("Enter Any Alfabet :");
-	scanf("%[^\n]",&s);
+	scanf("%[^\n]",&n);
 	
 	for(i=0;i<30;i++)
 	{
@@ -15,6 +15,6 @@ main()
 		}		
 	}
 	printf("=========================\n");
-	printf("Output is :%s",s);
+	printf("Output is :%s",n);
 	printf("\n=========================");
 }
