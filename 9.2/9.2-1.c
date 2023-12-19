@@ -2,41 +2,69 @@
 #include<string.h>
 main()
 {
-	char psw[10];
-	int i,upp=0,lwr=0,dig=0;
-	printf("Create Your Password");
-	gets(psw);
+	int i,A=0,a=0,d=0;
+	char n[20];
 	
-	if(strlen(psw)>=6)
+	printf("==================================\n");
+	printf("Password Must be More Than 6 word\n");
+	printf("==================================\n");
+	printf("Create Your Password :");
+	gets(n);
+	
+	if(strlen(n)>=6)
 	{
-		for(i=0;i<=strlen(psw);i++)
+		for(i=0;i<=strlen(n);i++)
 		{
-			if(psw[i]>=65 && psw[i]<=90)
+			if(n[i]>=65 && n[i]<=90)
 			{
-				upp=1;
+				A=1;
 			}
-			else if(psw[i]>=97 && psw[i]<=122)
+			else if(n[i]>=97 && n[i]<=122)
 			{
-				lwr=1;
+				a=1;
 			}
-			/////////////////////////////////////////   
-			else if(psw[i]>=48 && psw[i]<=57)
+			  
+			else if(n[i]>=48 && n[i]<=57)
 			{
-				dig=1;
+				d=1;
 			}
 		}
-			if(upp=1 && lwr==1 && dig==1)
+			if(A==1 && a==1 && d==1)
 			{
-				printf("Strong");
+				printf("=========================\n");
+				printf("Your password is Strong.\n");
+				printf("=========================\n");
+			}
+			else if(A==1)
+			{
+				
+				printf("=======================\n");
+				printf("Your password is Weak.\n");
+				printf("=======================\n");
+			}
+			
+			else if(a==1)
+			{
+				
+				printf("============================\n");
+				printf("Your password is Very Weak.\n");
+				printf("============================\n");
+			}
+			
+			else if(d==1)
+			{
+				
+				printf("================================\n");
+				printf("Take Suggestion from Your Elders.\n");
+				printf("================================\n");
 			}
 			else 
 			{
-			    printf("Weak");	
+				printf("==========================\n");
+			    printf("Your password not Strong.\n");	
+				printf("==========================\n");
 			}
 	}
-		else
-			{
-				printf("Must Contain 6 Letter");
-			}
+		
 }
 
