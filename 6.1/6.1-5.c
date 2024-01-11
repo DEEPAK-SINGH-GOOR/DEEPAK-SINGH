@@ -7,7 +7,7 @@ main()
 	printf("=========================================================================\n\n");
   
    int i,y1,y2;
- 
+   
    printf("Enter year y1 :");
    scanf("%d",&y1);
    printf("Enter year y2 :");

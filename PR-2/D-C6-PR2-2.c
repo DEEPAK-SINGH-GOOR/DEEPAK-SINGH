@@ -1,7 +1,6 @@
 #include<stdio.h>
-   
-     main ()
-     {
+main ()
+{
      int n ;
      float a,b,c,d ;
    
@@ -12,15 +11,15 @@
         a=n*0.5;
         printf("Your Electric Bill is %.2f",(a*0.2)+a);
     } 
-    
-   else if (n>=51 && n<=150)
+    else if (n>=51 && n<=150)
     {
         b=((n-50)*0.75+25);
         printf("Your  Electric Bill is %.2f",(b*0.2)+b);
     } 
+    
     else if(n>151 && n<=250)
     {
-        c=((n-151)*1.20+50);
+        c=((n-150)*1.20+50);
         printf("Your  Electric Bill is %.2f",(c*0.2)+c);
     }
     
@@ -34,3 +33,5 @@
        printf("YOUR  Electric BILL UNIT IS INVALIDE !!");
     }
 }
+
+

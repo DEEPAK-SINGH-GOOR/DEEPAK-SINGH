@@ -1,9 +1,15 @@
 #include<stdio.h>
-main()
+#include<string.h>
+
+void main()
 {
-   	char name[20];
-   	strupr(name);
+   	char str[20];
+   	int *ptr;
+   	ptr=&str;
+   	
 	printf("Enter Any Name :");	
-    scanf("%s",name);
-	printf("Output:%s",strupr(name));
+    gets(str);
+    
+    *ptr=strlen(str);
+	printf("Output:%d",*ptr);
 }

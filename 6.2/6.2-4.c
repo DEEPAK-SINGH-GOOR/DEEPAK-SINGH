@@ -9,16 +9,17 @@ main()
 	 
  int i,n,a,b,c;
 
-  a=0;
-  b=1;
   printf("Enter any value :");
   scanf("%d",&n);
+  
+  a=0;
+  b=1;
+  
   for(i=1; i<=n; i++)
   {
-    printf(" %d",a);
+    printf(" %d,",a);
     c=a+b;
     a=b;
     b=c;
   }
-
 }

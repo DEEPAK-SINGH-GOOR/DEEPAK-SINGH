@@ -6,10 +6,7 @@ main()
 
   printf("Enter any value :");
   scanf("%d",&n);
-  (n%2==0)
+  (n%4==0)
 	 ?printf("This value is Even!!")
 	 :printf("This value is Odd!!");
-
-
-
 }

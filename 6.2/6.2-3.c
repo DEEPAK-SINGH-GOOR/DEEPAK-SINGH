@@ -15,8 +15,9 @@ main()
     if(i%2==0)
     {
       printf(" %d",i);
-    }
-    i++;
+     i++;
+	}
+    
   }while(i<=n);
 
 }

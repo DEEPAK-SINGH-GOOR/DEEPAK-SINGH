@@ -1,29 +1,30 @@
 #include<stdio.h>
 main()
 {
-	int v,i,j,plus=0;
+	int n,i,j,plus;
 	printf("Enter any Number :");
-	scanf("%d\n",&v);
+	scanf("%d",&n);
 	
 	printf("=============================================\n");
 	printf(" Program to find Prime numbers between 1 to N.\n");
 	printf("==============================================\n\n");
 
-	for(i=1;i<=v;i++)
+	for(i=2;i<=n;i++)
 	{
-		for(j=1;j<=v;j++)
+		plus=1;
+		for(j=2;j*j<=n;j++)
 		{
 			if(i%j==0)
 			{
-				plus++;
+				plus=0;
+				break;
 			}
+		
 		}
-		if(plus<=2)
+		if(plus)
 		{
 			printf("%d ",i);
 		}
-		plus=0;
-	
+		
 	}
-	return 0;
 }

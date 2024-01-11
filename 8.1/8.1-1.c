@@ -17,4 +17,6 @@ main()
    }
    printf("\n");
    printf("THE ARRAY LENGHT IS :%d",n);
+
 }
+
