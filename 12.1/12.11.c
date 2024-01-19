@@ -14,9 +14,12 @@ struct students
 
 void main()
 {
+	printf("Enter No. of Student : ");
+	int n = getInt();
+	
 	fflush(stdin);
 	int i;
-	for(i=0;i<3;i++)
+	for(i=0;i<n;i++)
 	{
 		printf("\n\nEnter Your ID:");
 		scanf("%d\n",&s1.id);
@@ -36,7 +39,7 @@ void main()
 		printf("Enter Your School :");
 		scanf("%d",&s1.school);
 	}
-		for(i=0;i<3;i++)
+		for(i=0;i<n;i++)
 	{
 		printf("\n\nEnter Your ID:%d",s1.id);
 

@@ -19,9 +19,9 @@ void main()
 	int i;
 	
 	printf("Enter No. Of Employee :");
-	scanf("%d",&s1.no);
+	scanf("%d",&s1.no[i]);
 	
-	for(i=0;i<s1.no[100];i++)
+	for(i=0;i<s1.no[i];i++)
 	{
 		printf("\nEnter Your ID:");
 		scanf("%d\n",&s1.id[20]);
@@ -41,4 +41,23 @@ void main()
 		printf("Enter Your Company Name :");
 		scanf("%d",&s1.companyname[20]);
 	}
+		for(i=0;i<s1.no[i];i++)
+	{
+
+		printf("ID :%d\n",s1.id[20]);
+			fflush(stdin);
+		
+		printf("Name :%d\n",s1.name[20]);
+			fflush(stdin);
+	
+		printf("Age :%d\n",s1.age[20]);
+			fflush(stdin);
+		printf("Role :%d\n",s1.role[20]);
+			fflush(stdin);
+		
+		printf("Experience:%d\n",s1.experience[20]);
+		    fflush(stdin);
+		printf("Company Name :%d\n",s1.companyname[20]);
+	    
+}
 }
